@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1 id="titulo">ENCRIPTADOR DE TEXTOS</h1>
+        <div id="container">
+            <div id="encrypta">
+                <!-- Cambiar el input por un textarea -->
+                <textarea name="texto" id="texto" placeholder="Ingrese texto!"></textarea>
+                <div id="botones">
+                    <button onclick="encrypt()" id="encrypt"> Encriptar</button>
+                    <button onclick="desencrypt()" id="desencrypt"> Desencriptar</button>
+                </div>
+            </div>
+            <div id="desencrypta">
+                <!-- Cambiar el input por un textarea y agregar rows y cols para controlar el tamaño -->
+                <textarea id="result" disabled rows="4" cols="50"></textarea>
+                <p id="mensaje">No hay mensajes para mostrar!</p>
+                <div id="botones">
+                    <button id="copy" onclick="copy()">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
